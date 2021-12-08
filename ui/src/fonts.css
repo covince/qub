@@ -1,0 +1,9 @@
+@font-face{
+  font-family: BrandonText;
+  src:
+    url(//www.qub.ac.uk/assets/fonts/brandonTextComplete/HVDFonts-BrandonText-Bold.otf) format("opentype"),
+    url(/fonts/HVDFonts-BrandonText-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block
+}

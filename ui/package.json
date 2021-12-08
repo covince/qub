@@ -1,0 +1,14 @@
+{
+  "name": "qub-covid19-ui",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "covince": "github:covince/covince#v1.1.1"
+  },
+  "devDependencies": {}
+}

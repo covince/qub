@@ -1,0 +1,98 @@
+{
+  "area_search_terms": {
+    "url": "./ni-area-search.json",
+    "mode": "padded-first-input-token"
+  },
+  "dynamic_mode": {
+    "initial_lineages": {
+      "A": 7,
+      "B": 3,
+      "B.1.1.7": 1,
+      "B.1.177": 0,
+      "B.1.351": 4,
+      "B.1.617.2": 6,
+      "AY.4.2": 5
+    },
+    "_colour_palette": [
+      "magenta",
+      "#0F0",
+      "cyan"
+    ]
+  },
+  "parameters": [
+    {
+      "id": "lambda",
+      "display": "Genomes per week",
+      "precision": 1
+    },
+    {
+      "id": "p",
+      "display": "Proportion",
+      "format": "percentage",
+      "_precision": 0
+    }
+  ],
+  "ontology": {
+    "overview": {
+      "category": "National Overview",
+      "heading": "Northern Ireland",
+      "short_heading": "National"
+    },
+    "area": {
+      "category": "Local authority",
+      "noun_plural": "local authorities",
+      "search_placeholder": "local authority or postcode"
+    }
+  },
+  "timeline": {
+    "label": "Time period",
+    "date_format": {
+      "heading": "'Two weeks to 'd MMM yyyy",
+      "mobile_nav": "d MMMM y",
+      "chart_tooltip": "'2 weeks to 'd MMM yyyy"
+    },
+    "frame_length": 400
+  },
+  "map": {
+    "settings": {
+      "default_color_scale": {
+        "p": "linear",
+        "lambda": "quadratic"
+      },
+      "default_lineage": "AY.4.2"
+    },
+    "viewport": {
+      "min_zoom": 5.5,
+      "default_lat": 54.592129,
+      "default_lon": -6.763254,
+      "default_zoom": 6.5,
+      "default_zoom_mob": 6,
+      "bounds": {
+        "min_longitude": -10,
+        "max_longitude": -4,
+        "min_latitude": 53,
+        "max_latitude": 56
+      }
+    }
+  },
+  "charts": [
+    {
+      "parameter": "lambda",
+      "heading": "Genomes per week",
+      "default_type": "line",
+      "allow_stack": true
+    },
+    {
+      "parameter": "p",
+      "heading": "Proportion",
+      "default_type": "area",
+      "allow_stack": true
+    }
+  ],
+  "_nomenclature": [
+    {
+      "lineage": "B.1.1.7",
+      "alt_name": "Alpha"
+    }
+  ]
+}

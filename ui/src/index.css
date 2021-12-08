@@ -1,0 +1,36 @@
+@import 'covince/src/base.css';
+
+@font-face{
+  font-family: BrandonText;
+  src:
+    url(//www.qub.ac.uk/assets/fonts/brandonTextComplete/HVDFonts-BrandonText-Bold.otf) format("opentype"),
+    url(/fonts/HVDFonts-BrandonText-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block
+}
+
+html, body {
+	@apply leading-6 text-base font-normal p-0 m-0 text-gray-800 bg-gray-100;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* 100vh is incorrect on android, need to use % */
+#root > header + * {
+  height: calc(100% - theme('spacing.header'))
+}
+
+@media (min-width: theme('screens.md')) {
+  #root {
+    height: auto;
+  }
+
+  #root > header + * {
+    min-height: calc(100vh - theme('spacing.header-md'))
+  }
+}
