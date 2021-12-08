@@ -16,7 +16,8 @@ module.exports = {
     ...covinceConfig.theme,
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],
-      heading: ['Open Sans', 'sans-serif'],
+      // heading: ['Open Sans', 'sans-serif'],
+      heading: ['BrandonText', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
       display: ['BrandonText', 'Helvetica', 'Roboto', 'Arial', 'sans-serif']
     },
     extend: {
@@ -34,6 +35,9 @@ module.exports = {
         qub: {
           red: '#d6000d'
         }
+      },
+      fontSize: {
+        xl: '1.375rem'
       },
       spacing: {
         ...covinceConfig.theme.extend.spacing,

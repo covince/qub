@@ -25,12 +25,12 @@ const queryClient = new QueryClient({
 
 const NavBar = ({ children }) => (
   <header className="h-header md:h-header-md bg-qub-red">
-    <div className="h-20 flex items-center justify-between container text-white px-4">
+    <div className="pt-3 pb-1 md:h-20 flex items-center justify-between container text-white px-4">
       <span className='flex items-center space-x-4'>
         <NavLink className="font-bold text-xl" to="/">
           <QUBLogo className='w-36 h-14' />
         </NavLink>
-        <h1 className='font-display font-bold text-xl mb-1.5'>COVID–19 Genomic Surveillance</h1>
+        <h1 className='font-display font-bold text-lg md:text-xl mb-1.5 leading-tight'>COVID–19 Genomic&nbsp;Surveillance</h1>
       </span>
       {children}
     </div>
