@@ -6,7 +6,7 @@ module.exports = (text) => {
   const data = {}
   for (const row of rows) {
     const [date, ltla, lineage, count] = row.split('\t')
-    if (isPangoLineage(lineage)) {
+    if (isPangoLineage(lineage) && ltla.startsWith('N')) {
       const record = { ltla, lineage, count: parseInt(count) }
       if (date in data) {
         data[date].push(record)

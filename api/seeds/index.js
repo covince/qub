@@ -1,5 +1,5 @@
 const fs = require('fs')
-const mapTsvToRecords = require('../../mapTsvToRecords')
+const mapTsvToRecords = require('../mapTsvToRecords')
 
 exports.seed = async function (knex) {
   // const fetch = await import('node-fetch').then(({ default: fetch }) => fetch)

@@ -17,8 +17,8 @@ module.exports = {
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],
       // heading: ['Open Sans', 'sans-serif'],
-      heading: ['BrandonText', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
-      display: ['BrandonText', 'Helvetica', 'Roboto', 'Arial', 'sans-serif']
+      heading: ['BrandonText', 'Open Sans', 'sans-serif'],
+      display: ['BrandonText', 'Open Sans', 'sans-serif']
     },
     extend: {
       ...covinceConfig.theme.extend,
@@ -28,12 +28,14 @@ module.exports = {
         heading: colors.trueGray[700],
         subheading: colors.trueGray[600],
         dark: {
-          primary: '#b6000b',
+          // primary: '#fcb0bb',
+          primary: colors.gray[100],
           heading: colors.trueGray[200],
           subheading: colors.trueGray[300]
         },
         qub: {
-          red: '#d6000d'
+          red: '#d6000d',
+          'red-dark': '#96000d'
         }
       },
       fontSize: {
