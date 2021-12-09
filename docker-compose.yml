@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  database:
+    build: ./database
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+  api:
+    image: ghcr.io/covince/qub/api
+    environment:
+      - PG_URL=postgresql://postgres:${POSTGRES_PASSWORD}@database/qub
+      - NODE_ENV=production
+  ui:
+    image: ghcr.io/covince/qub/ui
+    environment:
+      - COVINCE_API_ORIGIN=http://api:4000
+    volumes:
+      - $PWD/fonts:/usr/share/nginx/html/fonts
+    ports:
+      - "8080:80"
