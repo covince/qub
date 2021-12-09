@@ -1,0 +1,47 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build images
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ['main']
+
+env:
+  REGISTRY: ghcr.io
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GHCR
+        uses: docker/login-action@v1
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      # https://github.com/docker/build-push-action/issues/37#issuecomment-720358308
+      - name: Build UI image
+        uses: docker/build-push-action@v2
+        with:
+          # relative path to the place where source code with Dockerfile is located
+          context: ./ui
+          push: true
+          # Note: tags has to be all lower-case
+          tags: |
+            ${{ env.REGISTRY }}/${{ github.repository }}/ui:latest
+      - name: Build API image
+        uses: docker/build-push-action@v2
+        with:
+          # relative path to the place where source code with Dockerfile is located
+          context: ./api
+          push: true
+          # Note: tags has to be all lower-case
+          tags: |
+            ${{ env.REGISTRY }}/${{ github.repository }}/api:latest
