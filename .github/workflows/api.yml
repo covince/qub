@@ -1,11 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build images
+name: Build API image
 
 on:
   workflow_dispatch:
   push:
     branches: ['main']
+    paths:
+    - './api/**'
 
 env:
   REGISTRY: ghcr.io
@@ -27,16 +29,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       # https://github.com/docker/build-push-action/issues/37#issuecomment-720358308
-      - name: Build UI image
-        uses: docker/build-push-action@v2
-        with:
-          # relative path to the place where source code with Dockerfile is located
-          context: ./ui
-          push: true
-          # Note: tags has to be all lower-case
-          tags: |
-            ${{ env.REGISTRY }}/${{ github.repository }}/ui:latest
-      - name: Build API image
+      - name: Build image
         uses: docker/build-push-action@v2
         with:
           # relative path to the place where source code with Dockerfile is located
