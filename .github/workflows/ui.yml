@@ -7,7 +7,7 @@ on:
   push:
     branches: ['main']
     paths:
-    - './ui/**'
+    - 'ui/**'
 
 env:
   REGISTRY: ghcr.io
