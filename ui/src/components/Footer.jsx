@@ -26,7 +26,7 @@ const Footer = () => (
           </Button>
         </form>
         <p className='text-sm'>
-          This page uses the <a href='https://github.com/covince'>CovInce</a> visualisation framework, developed as part of the <a href='https://www.sanger.ac.uk/science/covid-19-science/'>Wellcome Sanger Institute COVID–19&nbsp;Genomics Initiative</a>.
+          This page uses the <a href='https://github.com/covince'>CovInce</a> visualisation framework, developed as part of the <a href='https://www.sanger.ac.uk/science/covid-19-science/'>Wellcome Sanger Institute <span className='whitespace-nowrap'>COVID–19</span>&nbsp;Genomics Initiative</a>.
         </p>
         {/* <p className='text-sm'>
           This work is funded by <strong>The Department for Health and Social Care Testing Innovation Fund</strong> and <strong>Wellcome</strong>
@@ -34,7 +34,7 @@ const Footer = () => (
       </div>
       <div className='grid gap-12 my-3 sm:my-0 pl-4 sm:pl-0 sm:justify-evenly sm:flex sm:items-center md:col-span-2'>
         <a href='https://sanger.ac.uk'>
-          <img src={SangerLogo} className='w-56' />
+          <img src={SangerLogo} className='w-52' />
         </a>
         <a href='https://www.cogconsortium.uk'>
           <COGUKLogo className='w-64' />
