@@ -12,6 +12,6 @@ date  ltla  lineage count
 ## Running the system
 
 ```
-docker-compose up
+POSTGRES_PASSWORD=xxxxx docker-compose up -d
 ```
 This should build the database and download images for the API and UI. The UI should be available on port 8080.
