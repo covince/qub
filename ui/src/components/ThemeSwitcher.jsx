@@ -34,7 +34,7 @@ const ThemeSwitcher = ({ mode, setMode }) => {
       <Menu.Button
         className={`
           p-1 flex items-baseline space-x-1 text-white border border-transparent rounded-md
-          focus:border-current focus:ring ring-white ring-offset-0 ring-opacity-40
+          focus:outline-none focus:border-current focus:ring ring-white ring-offset-0 ring-opacity-40
         `}
         title='Theme selector'
       >

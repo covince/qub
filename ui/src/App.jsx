@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useMemo } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { NavLink } from 'react-router-dom'
 
@@ -9,6 +9,7 @@ import CovInce from 'covince/src/DynamicCovInce'
 import QUBLogo from './components/QUBLogo'
 import ErrorHandler from './components/ErrorHandler'
 import ThemeSwitcher from './components/ThemeSwitcher'
+import Footer from './components/Footer'
 
 import useDarkMode from 'covince/src/hooks/useDarkMode'
 
@@ -51,23 +52,27 @@ const Loading = () => (
 
 function App () {
   const darkMode = useDarkMode()
+  const height = useMemo(() => window.innerHeight, [])
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <NavBar darkMode={darkMode} />
-        <ErrorHandler>
-          <Suspense fallback={<Loading />}>
-            <AppContainer>
-              <CovInce
-                tiles_url="/map-ni.json"
-                config_url="/config.json"
-                lineColor="gray"
-                darkMode={darkMode.isDark}
-                // avg={avgFunction}
-              />
-            </AppContainer>
-          </Suspense>
-        </ErrorHandler>
+        <div className='flex flex-col flex-grow' style={{ minHeight: height }}>
+          <NavBar darkMode={darkMode} />
+          <ErrorHandler>
+            <Suspense fallback={<Loading />}>
+              <AppContainer className='flex-grow'>
+                <CovInce
+                  tiles_url="/map-ni.json"
+                  config_url="/config.json"
+                  lineColor="gray"
+                  darkMode={darkMode.isDark}
+                  // avg={avgFunction}
+                />
+              </AppContainer>
+            </Suspense>
+          </ErrorHandler>
+        </div>
+        <Footer />
       </QueryClientProvider>
     </>
   )

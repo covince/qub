@@ -1,0 +1,13 @@
+.dark .qub-footer img {
+  mix-blend-mode: screen;
+  filter: saturate(0) contrast(1.1) invert();
+}
+
+.qub-footer a {
+  @apply font-medium text-primary dark:text-dark-primary;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

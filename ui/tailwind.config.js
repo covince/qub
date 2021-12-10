@@ -7,6 +7,7 @@ module.exports = {
   ...covinceConfig,
   purge: {
     content: [
+      './index.html',
       './src/**/*.jsx',
       './src/**/*.mdx',
       './node_modules/covince/src/**/*.jsx'

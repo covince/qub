@@ -25,7 +25,7 @@ class Error extends React.Component {
             <p className='font-bold'>We&rsquo;re sorry, something went wrong.</p>
             <p><Link href=''>Refreshing the page</Link> might fix the problem.</p>
             <p className='text-sm mt-6'>
-              If it doesn&rsquo;t, please <Link href=''>contact us</Link>.
+              If it doesn&rsquo;t, please <Link href='mailto:'>contact us</Link>.
             </p>
           </Card>
         </Dialog>

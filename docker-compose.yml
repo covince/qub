@@ -9,6 +9,7 @@ services:
     environment:
       - PG_URL=postgresql://postgres:${POSTGRES_PASSWORD}@database/qub
       - NODE_ENV=production
+      - COVINCE_MAX_LINEAGES=16
   ui:
     image: ghcr.io/covince/qub/ui
     environment:
