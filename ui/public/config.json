@@ -83,24 +83,26 @@
       }
     }
   },
-  "charts": [
-    {
-      "parameter": "lambda",
-      "heading": "Genomes per week",
-      "default_type": "line",
-      "allow_stack": true
-    },
-    {
-      "parameter": "p",
-      "heading": "Proportion",
-      "default_type": "area",
-      "allow_stack": true
+  "chart": {
+    "definitions": [
+      {
+        "parameter": "lambda",
+        "heading": "Genomes per week",
+        "default_type": "line",
+        "allow_stack": true
+      },
+      {
+        "parameter": "p",
+        "heading": "Proportion",
+        "default_type": "area",
+        "allow_stack": true
+      }
+    ],
+    "settings": {
+      "csv_download": false,
+      "tooltip": {
+        "use_nomenclature": false
+      }
     }
-  ],
-  "_nomenclature": [
-    {
-      "lineage": "B.1.1.7",
-      "alt_name": "Alpha"
-    }
-  ]
+  }
 }
