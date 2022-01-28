@@ -9,7 +9,7 @@
     "load": "node load.js"
   },
   "dependencies": {
-    "covince-backend": "github:covince/covince-backend#v1.1.0"
+    "covince-backend": "github:covince/covince-backend#v1.2.0"
   },
   "devDependencies": {
     "csv": "^5.5.0",

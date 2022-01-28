@@ -251,14 +251,14 @@ cors@^2.8.5:
     object-assign "^4"
     vary "^1"
 
-"covince-backend@github:covince/covince-backend#v1.1.0":
-  version "1.1.0"
-  resolved "https://codeload.github.com/covince/covince-backend/tar.gz/a37ed785e006c69827705b37f588559361c5c234"
+"covince-backend@github:covince/covince-backend#v1.2.0":
+  version "1.2.0"
+  resolved "https://codeload.github.com/covince/covince-backend/tar.gz/10c9be7f4358eed72dac3ccaee3c0abb955914e4"
   dependencies:
     cors "^2.8.5"
     express "^4.17.1"
     knex "^0.95.7"
-    pango-utils "github:covince/pango-utils#v1.2.0"
+    pango-utils "github:covince/pango-utils#v1.3.0"
     pg "^8.6.0"
     pg-query-stream "^4.2.1"
     pg-types "^3.0.1"
@@ -931,9 +931,9 @@ packet-reader@1.0.0:
   resolved "https://registry.yarnpkg.com/packet-reader/-/packet-reader-1.0.0.tgz#9238e5480dedabacfe1fe3f2771063f164157d74"
   integrity sha512-HAKu/fG3HpHFO0AA8WE8q2g+gBJaZ9MG7fcKk+IJPLTGAD6Psw4443l+9DGRbOIh3/aXr7Phy0TjilYivJo5XQ==
 
-"pango-utils@github:covince/pango-utils#v1.2.0":
-  version "1.2.0"
-  resolved "https://codeload.github.com/covince/pango-utils/tar.gz/490c7ca9b683f0e7c51812b36a1dab9f0816bdaa"
+"pango-utils@github:covince/pango-utils#v1.3.0":
+  version "1.3.0"
+  resolved "https://codeload.github.com/covince/pango-utils/tar.gz/ac023b63c3d23158c534528cf5da8acf66e2858a"
 
 parseurl@~1.3.3:
   version "1.3.3"
