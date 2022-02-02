@@ -44,7 +44,15 @@ export default defineConfig({
     }
   },
   optimizeDeps: {
-    include: ['pango-utils']
+    include: [
+      'pango-utils',
+      'prop-types',
+      'warning',
+      'react-fast-compare',
+      'tailwindcss/defaultTheme',
+      'wilson-score-interval',
+      'lodash'
+    ]
   },
   build: {
     cssCodeSplit: false
