@@ -15,7 +15,7 @@ const Footer = () => (
         <form>
           <Button
             as='a'
-            href='mailto:'
+            href='mailto:conor.graham@qub.ac.uk'
             className='inline-flex items-center h-9 !text-primary dark:!text-dark-primary font-bold !no-underline'
           >
             Send feedback
@@ -23,7 +23,7 @@ const Footer = () => (
           </Button>
         </form>
         <p className='text-sm'>
-          Site hosted by <strong>Centre for Geographical Information Science and Geomatics, Geography, School Natural and Built Environment, QUB</strong>. Developed with the <a href='https://www.sanger.ac.uk/science/covid-19-science/'>Wellcome Sanger Institute <span className='whitespace-nowrap'>COVID–19</span>&nbsp;Genomics Initiative</a>.
+          This page uses the Covince visualisation framework, developed as part of the <a href='https://www.sanger.ac.uk/science/covid-19-science/'>Wellcome Sanger Institute <span className='whitespace-nowrap'>COVID–19</span>&nbsp;Genomics Initiative</a>.
         </p>
       </div>
       <div className='grid gap-12 my-3 sm:my-0 pl-4 sm:pl-0 sm:justify-evenly sm:flex sm:items-center md:col-span-2'>
@@ -37,7 +37,8 @@ const Footer = () => (
         <ul className='list-none text-xs tracking-wide'>
           <li>Contains Ordnance Survey data © Crown copyright and database right 2019</li>
           {/* <li>Contains UK Health Security Agency data © Crown copyright and database right 2020</li> */}
-          <li>Office for National Statistics licensed under the Open Government Licence v.3.0</li>
+          <li>Office for National Statistics licensed under the Open Government Licence v3.0</li>
+          <li>Site maintained and hosted by <strong><a href="https://www.qub.ac.uk/research-centres/GIS/">Centre for Geographical Information Science and Geomatics, Geography, School Natural and Built Environment, QUB</a></strong></li>
         </ul>
       </div>
     </div>
