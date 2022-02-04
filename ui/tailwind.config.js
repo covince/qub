@@ -47,6 +47,14 @@ module.exports = {
         header: `calc(${defaultTheme.spacing[16]} + ${defaultTheme.spacing[2]})`,
         'header-md': `calc(${defaultTheme.spacing[20]} + ${defaultTheme.spacing[14]})`,
         'header-overlap': '4.5rem' // 3 * 1.5rem (6)
+      },
+      width: {
+        content: 'fit-content'
+      },
+      maxWidth: {
+        'measure-1': '60ch',
+        'measure-1.5': '65ch',
+        'measure-2': '70ch'
       }
     }
   },
