@@ -64,7 +64,13 @@ const PageWithInfo = ({ InfoContent, darkMode, children }) => {
             header={
               <header className='flex items-center justify-between'>
                 <h2 className='font-display text-lg'>About this page</h2>
-                <ThemeSwitcher {...darkMode} className='ring-gray-700 dark:ring-gray-100 text-gray-700 dark:text-gray-100 ' />
+                <ThemeSwitcher
+                  {...darkMode}
+                  className={`
+                  ring-gray-700 dark:ring-gray-100 text-gray-700 dark:text-gray-100 
+                    border border-gray-300 dark:border-gray-400 rounded-md p-2
+                  `}
+                />
               </header>
             }
           />
