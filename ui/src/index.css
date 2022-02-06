@@ -20,6 +20,14 @@ html, body {
   height: 100%;
 }
 
+.sliding-drawer-open {
+  overflow: hidden;
+}
+
+.sliding-drawer-open #root {
+  overflow-y: scroll;
+}
+
 /* 100vh is incorrect on android, need to use % */
 #root > header + * {
   height: calc(100% - theme('spacing.header'))

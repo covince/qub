@@ -25,7 +25,7 @@ const getIcon = mode => {
   if (mode === 'dark') return BsMoonFill
 }
 
-const ThemeSwitcher = ({ mode, setMode }) => {
+const ThemeSwitcher = ({ mode, setMode, className = '' }) => {
   const isMobile = useMobile()
   const SystemIcon = isMobile ? BsPhone : BsDisplay
   const StatusIcon = getIcon(mode) || SystemIcon
@@ -33,8 +33,9 @@ const ThemeSwitcher = ({ mode, setMode }) => {
     <Menu as='div' className='relative z-20'>
       <Menu.Button
         className={`
-          p-1 flex items-baseline space-x-1 text-white border border-transparent rounded-md
-          focus:outline-none focus:border-current focus:ring ring-white ring-offset-0 ring-opacity-40
+          ${className}
+          p-1 flex items-baseline space-x-1 border border-transparent rounded-md
+          focus:outline-none focus:border-current focus:ring ring-offset-0 ring-opacity-40 dark:ring-opacity-40
         `}
         title='Theme selector'
       >
