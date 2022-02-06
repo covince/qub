@@ -37,7 +37,9 @@ const Loading = () => (
 const Info = ({ className, header }) => (
   <div className={classNames(className, 'space-y-3 text-sm')}>
     {header}
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>
+    This visualisation displays observed counts of lineages of SARS-CoV-2 in Northern Ireland. Samples come from Lighthouse Labs covering most of the pillar 2 testing, and are sequenced by the Wellcome Sanger Institute's COVID-19 Genomics Initiative. These data are a subset of what is made available by the COVID-19 Genomics UK Consortium.
+    </p>
   </div>
 )
 
