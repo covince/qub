@@ -23,8 +23,7 @@ const Footer = () => (
           </Button>
         </form>
         <p className='text-sm'>
-          This page uses the Covince Visualisation Framework, developed as part of the 
-          <a href='https://www.sanger.ac.uk/science/covid-19-science/'>Wellcome Sanger Institute <span className='whitespace-nowrap'>COVID–19</span>&nbsp;Genomics Initiative</a>.
+          This page uses the <a href="https://github.com/covince/covince">CovInce</a> visualisation framework, developed as part of the <a href='https://www.sanger.ac.uk/science/covid-19-science/'>Wellcome Sanger Institute <span className='whitespace-nowrap'>COVID–19</span>&nbsp;Genomics Initiative</a>.
         </p>
       </div>
       <div className='grid gap-12 my-3 sm:my-0 pl-4 sm:pl-0 sm:justify-evenly sm:flex sm:items-center md:col-span-2'>
@@ -33,14 +32,16 @@ const Footer = () => (
           <COGUKLogo className='w-64' />
         </a>
       </div>
-      <div className='space-y-1 md:col-span-2 w-content md:mt-3 xl:mt-6'>
-        <h3 className='font-bold leading-5'>Attributions</h3>
+      <div className='md:col-span-2 w-content md:mt-3 xl:mt-6'>
+        <h3 className='font-bold leading-5 mb-1'>Attributions</h3>
         <ul className='list-none text-xs tracking-wide'>
           <li>Contains Ordnance Survey data © Crown copyright and database right 2019</li>
           {/* <li>Contains UK Health Security Agency data © Crown copyright and database right 2020</li> */}
           <li>Office for National Statistics licensed under the Open Government Licence v.3.0</li>
-          <li>Site maintained and hosted by <strong><a href="https://www.qub.ac.uk/research-centres/GIS/">Centre for Geographical Information Science and Geomatics, Geography, School Natural and Built Environment, QUB</a></strong></li>
         </ul>
+        <p className='text-xs tracking-wide mt-3 md:max-w-lg'>
+          Site maintained and hosted by <strong><a href="https://www.qub.ac.uk/research-centres/GIS/">Centre for Geographical Information Science and Geomatics, Geography, School Natural and Built Environment, QUB</a></strong>
+        </p>
       </div>
     </div>
   </footer>
