@@ -53,7 +53,7 @@ const PageWithInfo = ({ InfoContent, darkMode, children }) => {
           : <div className='flex items-center absolute top-0 right-0 bg-qub-red-dark dark:bg-qub-red bg-opacity-70 dark:bg-opacity-70 divide-x divide-qub-red-dark '>
             <ThemeSwitcher {...darkMode} className='text-white ring-white mx-1.5' />
             <InfoDrawer>
-              <InfoContent header={<h2 className='font-display text-lg'>About this page</h2>} />
+              <InfoContent header={<h2 className='font-display text-xl'>About this page</h2>} />
             </InfoDrawer>
           </div> }
       </NavBar>
@@ -63,7 +63,7 @@ const PageWithInfo = ({ InfoContent, darkMode, children }) => {
             className='px-4 py-5 mx-auto'
             header={
               <header className='flex items-center justify-between'>
-                <h2 className='font-display text-lg'>About this page</h2>
+                <h2 className='font-display text-xl'>About this page</h2>
                 <ThemeSwitcher
                   {...darkMode}
                   className={`

@@ -34,6 +34,8 @@ const Loading = () => (
   </div>
 )
 
+const Subheading = props => <h3 {...props} className='font-display font-bold text-lg pt-5 leading-5' />
+
 const Info = ({ className, header }) => (
   <div className={classNames(className, 'space-y-3 text-sm')}>
     {header}
@@ -51,14 +53,14 @@ removed from the numerator and denominator of the proportions.</p>
 and experts. At the same time, the data is complex and can be misinterpreted easily. Below we
 provide some additional information which describes the way the data for this dashboard is
 collected, processed and presented in more detail.</p>
-<h3>Key terms</h3>
+<Subheading>Key terms</Subheading>
 <li><strong>Genomes per Week</strong> - the average number of genomes that belong to a particular lineage
 per week over the two-week period ending on the specified date.
 </li>
 <li><strong>Proportion</strong> - the percentage of genomes sequenced in the selected two-week period that
 belong to a particular lineage.</li>
 
-<h3>It is not a comprehensive record of SARS-CoV-2 incidence</h3>
+<Subheading>It is not a comprehensive record of SARS-CoV-2 incidence</Subheading>
 
 <li> Our aim is to show an approximately random selection of samples positive for SARS-CoV-2 in
 the community for genomic surveillance. Although it is not possible to fully achieve this, the
@@ -84,7 +86,7 @@ and the Public Health Agency assume no responsibility arising out of or in conne
 the data or its use. Authoritative, validated SARS-CoV-2 genome data is made available by
 the UK Health Security Agency.</li>
 
-<h3>Proportions of a particular variant are easy to misinterpret</h3>
+<Subheading>Proportions of a particular variant are easy to misinterpret</Subheading>
 
 <li> A high proportion of variant cases could seem alarming if just the percentage is reported in
 areas with only a few sequences. We therefore also report the number of genomes per
