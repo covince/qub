@@ -57,7 +57,7 @@
         "lambda": "quadratic"
       },
       "default_color_by": "p",
-      "default_lineage": "B.1.1.529",
+      "default_lineage": "BA.2",
       "color_map_domain": {
         "p": {
           "min": 0,
