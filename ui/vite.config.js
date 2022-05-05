@@ -45,7 +45,6 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: [
-      'pango-utils',
       'prop-types',
       'warning',
       'react-fast-compare',
