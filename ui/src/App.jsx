@@ -103,6 +103,7 @@ function App () {
             <ErrorHandler>
               <Suspense fallback={<Loading />}>
                 <CovInce
+                  aliases_url="/alias_key.json"
                   tiles_url="/map-ni.json"
                   config_url="/config.json"
                   lineColor="gray"
